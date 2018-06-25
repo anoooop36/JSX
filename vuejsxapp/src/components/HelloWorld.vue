@@ -1,5 +1,6 @@
 
 <script>
+import TextComponent from './TextComponent.vue'
 export default {
   name: 'HelloWorld',
   data () {
@@ -9,7 +10,10 @@ export default {
   },
   render (createElement) {
      return (
+         <div>
          <button domPropsInnerHTML={this.msg} onClick={this.handleClick}></button>
+         <TextComponent></TextComponent>
+         </div>
      )
  },
  methods: {
