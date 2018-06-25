@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "babel-preset-vue-app": "^2.0.0"
+  }
+}
