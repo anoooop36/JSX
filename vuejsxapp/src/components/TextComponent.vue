@@ -1,13 +1,15 @@
+<script lang="tsx">
+import Vue from 'vue'
+import { Component } from 'vue-property-decorator'
 
-<script>
-export default {
-  name: 'TextComponent',
+export default class TextComponent extends Vue {
+  name: 'TextComponent'
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
     }
-  },
- render (createElement) {
+  }
+  render (createElement) {
      const inputAttributes = {
          class: 'input-field has-outline', // class definition
          onClick: this.handleClick, // event handler
@@ -18,12 +20,12 @@ export default {
          : <input {...inputAttributes}/>
 
     return inputMarkup
- },
- methods: {
-   handleClick () {
+  }
+  handleClick () {
      alert('button clicked')
-   }
- }
+  }
+
 }
 </script>
+
 

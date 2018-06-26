@@ -1,0 +1,34 @@
+{
+  "include": [
+    "src/*",
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    // typeRoots option has been previously configured
+    "typeRoots": [
+      // add path to @types
+      "node_modules/@types",
+      "./types"
+    ],
+    
+    "jsx": "preserve", 
+    "jsxFactory": "h",
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true,        
+    "inlineSources": true,
+    "module": "es2015",    
+    "target": "es2015",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "sourceMap": true,
+    "pretty": true
+  }
+}

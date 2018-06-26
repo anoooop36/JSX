@@ -1,13 +1,15 @@
 
-<script>
+<script lang = 'tsx' >
+import Vue from 'vue'
+import { Component } from 'vue-property-decorator'
 import TextComponent from './TextComponent.vue'
-export default {
-  name: 'HelloWorld',
+export default class HelloWorld extends Vue {
+  name: 'HelloWorld'
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  },
+  }
   render (createElement) {
      return (
          <div>
@@ -15,12 +17,10 @@ export default {
          <TextComponent></TextComponent>
          </div>
      )
- },
- methods: {
-   handleClick () {
-     alert('button clicked')
-   }
  }
+  handleClick () {
+    alert('button clicked')
+  }
 }
 </script>
 
